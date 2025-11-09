@@ -1,5 +1,12 @@
 [
     {
+        "title": "Tony's Pizzeria",
+        "url": "https://micheleargenti.github.io/restaurant-sample/",
+        "description": "Pizzeria artigianale che unisce la tradizione della cucina italiana alla qualità degli ingredienti selezionati, per offrire un'esperienza autentica da gustare in ogni boccone.",
+        "plus": "Incremento del 76% della prenotazione da parte dei clienti",
+        "logo": "images/tony_pizzeria.png"
+    },
+    {
         "title": "Rafting Website",
         "url": "https://micheleargenti.github.io/wdd130/wwr/index.html",
         "description": "Ho realizzato un sito web dinamico e coinvolgente per un'azienda specializzata in rafting, pensato per trasmettere l'emozione dell'avventura e convertire i visitatori in clienti.",
