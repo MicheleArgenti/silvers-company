@@ -3,65 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michele Argenti | Portfolio</title>
+    <title>Silvers Company | Professional Web Development</title>
     <link rel="stylesheet" href="styles/index.css">
     <script src="script/index.js" defer></script>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <div class="nav-container">
+        <div class="container header-container">
             <div class="logo">
-                <img src="images/logo.png" alt="Your Logo">
+                <img src="images/logo.png" alt="Silvers Company">
             </div>
-            <div class="nav-buttons">
-                <a href="mailto:your.email@example.com" class="nav-btn">Email</a>
-                <a href="https://github.com/MicheleArgenti" target="_blank" class="nav-btn">GitHub</a>
-                <a href="https://linkedin.com/in/michele-argenti" target="_blank" class="nav-btn">LinkedIn</a>
-            </div>
+            <nav>
+                <button class="mobile-menu-btn">☰</button>
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#contact" class="btn">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    
-    <main>
-        <section class="hero">
-            <div class="about">
-                <h1>Riguardo a noi</h1>
-                <p>
-                    <b>Siamo un'azienda dinamica e appassionata, specializzata nella creazione di siti internet su 
-                    misura per ogni esigenza.</b> <br>
-                    Dal piccolo business alla grande azienda, realizziamo progetti web <b>performanti, moderni e su 
-                    misura</b>, pensati per crescere insieme a te. <br>
-                    Per noi ogni progetto è una <b>nuova sfida creativa</b>: ci mettiamo in gioco con entusiasmo, unendo 
-                    design accattivante, tecnologia all'avanguardia e strategie efficaci per farti <b>spiccare online</b>. <br>
-                    <br>
-                    <b>Cosa offriamo:</b> <br>
-                    🚀 <b>Siti web responsive</b> (perfetti su mobile, tablet e desktop) <br>
-                    📊 <b>Report mensili</b> dettagliati con analisi traffico e performance <br>
-                    💳 <b>Pagamenti rateali</b> per rendere tutto più flessibile <br>
-                    🔍 <b>SEO avanzata</b> per migliorare la visibilità sui motori di ricerca <br>
-                    🛠  <b>Manutenzione e aggiornamenti</b> continui <br>
-                    ✨ <b></b>… <i>e molto altro!</i></b> <br>
-                </p>
-            </div>
-            
-            <div class="projects">
-                <h2>I nostri progetti</h2>
-                <div class="project-grid" id="project-grid">
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Creiamo Esperienze Digitali Che Generano Risultati</h1>
+            <p>Silvers Company è una delle principali aziende di sviluppo web, specializzata nella creazione di siti web accattivanti e reattivi che aiutano le aziende a crescere online.</p>
+            <a href="#projects" class="btn">Guarda i nostri Lavori</a>
+            <a href="#contact" class="btn btn-accent">Iniziamo</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Silvers Company</h2>
+                    <p>Fondata nel 2025, Silvers Company è all'avanguardia nello sviluppo web, aiutando aziende di ogni dimensione a stabilire una presenza online efficace. Il nostro team di sviluppatori, designer e strateghi digitali esperti lavora insieme per creare siti web che non solo siano belli da vedere, ma che offrano anche prestazioni eccezionali.</p>
+                    <p>Crediamo in un approccio collaborativo, lavorando a stretto contatto con i nostri clienti per comprendere le loro esigenze specifiche e fornire soluzioni che superino le aspettative.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Progetti Completati</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Anni di esperienza</p>
+                        </div>
+                        <div class="stat">
+                            <h3>9+</h3>
+                            <p>Clienti soddisfatti</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/logo.png" alt="Silvers Company">
                 </div>
             </div>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="footer-content">
-            <div class="contact-info">
-                <a href="mailto:michele.argenti000@gmail.com" class="contact-link">michele.argenti000@gmail.com</a>
-                <a href="https://wa.me/3921354583" class="contact-link">WhatsApp</a>
-                <a href="https://linkedin.com/in/michele-argenti" class="contact-link">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>I nostri progetti recenti</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <a href="https://micheleargenti.github.io/restaurant-sample/" target="_blank">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="images/tony_pizzeria.png" alt="Tony's Pizzeria">
+                        </div>
+                        <div class="project-info">
+                            <h3>Tony's Pizzeria</h3>
+                            <p>Pizzeria artigianale che unisce la tradizione della cucina italiana alla qualità degli ingredienti selezionati, per offrire un'esperienza autentica da gustare in ogni boccone.</p>
+                            <!--
+                            <div class="project-tags">
+                                <span class="tag">E-commerce</span>
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                 <a href="https://micheleargenti.github.io/wdd130/wwr/index.html" target="_blank">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="images/rafting_website.jpg" alt="Rafting">
+                        </div>
+                        <div class="project-info">
+                            <h3>Rafting Website</h3>
+                            <p>Un sito web dinamico e coinvolgente per un'azienda specializzata in rafting, pensato per trasmettere l'emozione dell'avventura e convertire i visitatori in clienti.</p>
+                            <!--
+                            <div class="project-tags">
+                                <span class="tag">Corporate</span>
+                                <span class="tag">WordPress</span>
+                                <span class="tag">PHP</span>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="https://micheleargenti.github.io/wdd131/project/index.html" target="_blank">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="images/reef_paradise.webp" alt="Reef Paradise">
+                        </div>
+                        <div class="project-info">
+                            <h3>Reef Paradise</h3>
+                            <p>Un e-commerce su misura per un rivenditore specializzato in acquari completi, accessori e servizi di manutenzione.</p>
+                            <!--
+                            <div class="project-tags">
+                                <span class="tag">Booking</span>
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Project 4 -->
+                <a href="https://micheleargenti.github.io/wdd231/project/index.html" target="_blank">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="images/pokemon_world.webp" alt="Pokémon World">
+                        </div>
+                        <div class="project-info">
+                            <h3>Pokémon World</h3>
+                            <p>Un hub dinamico per fan Pokémon, combinando database completo e funzioni social.</p>
+                            <!--
+                            <div class="project-tags">
+                                <span class="tag">Education</span>
+                                <span class="tag">Laravel</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </a>
             </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <h2>Perché scegliere Silvers Company?</h2>
+            <div class="benefits-grid">
+                <!-- Benefit 1 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚀</div>
+                    <h3>Consegna veloce</h3>
+                    <p>Sappiamo che il tempo è denaro. I nostri processi efficienti garantiscono la consegna puntuale del tuo progetto, ogni volta.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">💡</div>
+                    <h3>Soluzioni innovative</h3>
+                    <p>Anticipiamo le tendenze del settore per fornire soluzioni all'avanguardia che ti garantiscano un vantaggio competitivo.</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">📱</div>
+                    <h3>Progettazione mobile-first</h3>
+                    <p>Tutti i nostri siti web sono progettati pensando agli utenti mobili, garantendo un'esperienza fluida su tutti i dispositivi.</p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Sicuri e affidabili</h3>
+                    <p>Implementiamo solide misure di sicurezza per proteggere il tuo sito web e i tuoi dati da potenziali minacce.</p>
+                </div>
+                
+                <!-- Benefit 5 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔍</div>
+                    <h3>SEO ottimizzato</h3>
+                    <p>I nostri siti web sono realizzati con le migliori pratiche SEO per aiutarti a ottenere un posizionamento più alto nei risultati dei motori di ricerca.</p>
+                </div>
+                
+                <!-- Benefit 6 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">📞</div>
+                    <h3>Supporto continuo</h3>
+                    <p>Forniamo supporto e manutenzione continui per garantire che il tuo sito web rimanga aggiornato e funzionale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Pronto a Trasformare la Tua Presenza Online?</h2>
+            <p>Contattaci oggi per una consulenza gratuita e discutiamo di come possiamo aiutare la tua attività ad avere successo online.</p>
+            <a href="mailto:michele.argenti000@gmail.com" class="btn btn-accent">Ottieni il tuo preventivo gratuito</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Silvers Company</h3>
+                    <p>Creiamo esperienze digitali eccezionali dal 2025. Siamo specializzati nello sviluppo web personalizzato che stimola la crescita aziendale.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Collegamenti rapidi</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#projects">Our Work</a></li>
+                        <li><a href="#benefits">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Email: michele.argenti000@gmail.com</li>
+                        <li>Telefono: +39 392 135 4583</li>
+                    </ul>
+                </div>
+            </div>
+            
             <div class="copyright">
-                &copy; <span id="year"></span> Your Name. All rights reserved.
+                <p>&copy; 2025 Silvers Company. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
 </body>
 </html>

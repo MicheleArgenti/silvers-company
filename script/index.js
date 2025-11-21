@@ -1,26 +1,25 @@
-//sdocument.getElementById('year').textContent = new Date().getFullYear();
+// Mobile menu toggle
+document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+    document.getElementById('nav-menu').classList.toggle('show');
+});
 
-async function getProjectData() {
-    const response = await fetch('./data/projects.json');
-    const data = await response.json();
-    displayProjects(data);
-}
-
-const displayProjects = (data) => {
-    let main = document.getElementById('project-grid');
-    data.forEach(element => {
-        let div = document.createElement('div');
-        div.classList.add('project-card');
-        div.innerHTML = `
-            <h3>${element.title}</h3>
-            <p>${element.description}</p>
-            <div class="project-link-container">
-                <img src="${element.logo}" alt="${element.title}">
-                <a href="${element.url}" class="project-link">View Project →</a>
-            </div>
-        `;
-        main.appendChild(div);
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if(targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if(targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+            });
+            
+            // Close mobile menu if open
+            document.getElementById('nav-menu').classList.remove('show');
+        }
     });
-}
-
-getProjectData();
+});
