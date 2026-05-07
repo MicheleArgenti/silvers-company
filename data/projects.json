@@ -1,30 +1,146 @@
 [
     {
-        "title": "Tony's Pizzeria",
-        "url": "https://micheleargenti.github.io/restaurant-sample/",
-        "description": "Pizzeria artigianale che unisce la tradizione della cucina italiana alla qualità degli ingredienti selezionati, per offrire un'esperienza autentica da gustare in ogni boccone.",
-        "plus": "Incremento del 76% della prenotazione da parte dei clienti",
+        "title": {
+            "en": "Tony's Pizzeria",
+            "it": "Pizzeria da Tony"
+        },
+        "url": "https://micheleargenti.github.io/tony-s-pizzeria/",
+        "description": {
+            "en": "Artisanal pizzeria that combines traditional Italian cuisine with quality ingredients, offering an authentic experience you can savor in every bite.",
+            "it": "Pizzeria artigianale che unisce la tradizione culinaria italiana con ingredienti di qualità, offrendo un'esperienza autentica da gustare in ogni morso."
+        },
+        "plus": {
+            "en": "76% increase in customer bookings, 85% positive feedback on food quality, and a 50% boost in online orders.",
+            "it": "Aumento del 76% delle prenotazioni, feedback positivo dell'85% sulla qualità del cibo e incremento del 50% degli ordini online."
+        },
         "logo": "images/tony_pizzeria.png"
     },
     {
-        "title": "Rafting Website",
-        "url": "https://micheleargenti.github.io/wdd130/wwr/index.html",
-        "description": "Ho realizzato un sito web dinamico e coinvolgente per un'azienda specializzata in rafting, pensato per trasmettere l'emozione dell'avventura e convertire i visitatori in clienti.",
-        "plus": "Obiettivo raggiunto: +30% di prenotazioni online nei primi 3 mesi.",
-        "logo": "images/rafting_website.jpg"
+        "title": {
+            "en": "The Breakfast Bar",
+            "it": "Il Bar Colazione"
+        },
+        "url": "https://micheleargenti.github.io/bar-colazione",
+        "description": {
+            "en": "Popular bar with list of displayed goods and menu with the most popular food.",
+            "it": "Bar popolare con lista della merce esposta e del menu con il cibo più popolare."
+        },
+        "plus": {
+            "en": "Reduced wait times by 40%, 1000+ loyalty members in 6 months",
+            "it": "Tempi d'attesa ridotti del 40%, oltre 1000 membri fedeltà in 6 mesi"
+        },
+        "logo": "images/breakfast_bar.png"
     },
     {
-        "title": "Reef Paradise",
-        "url": "https://micheleargenti.github.io/wdd131/project/index.html",
-        "description": "Ho sviluppato un e-commerce su misura per un rivenditore specializzato in acquari completi, accessori e servizi di manutenzione.",
-        "plus": "+40% di conversione sui kit completi.",
-        "logo": "images/reef_paradise.webp"
+        "title": {
+            "en": "Sushi Master",
+            "it": "Maestro del Sushi"
+        },
+        "url": "https://micheleargenti.github.io/sushi-master",
+        "description": {
+            "en": "Modern Japanese restaurant with interactive menu, and chef's special tasting menu booking.",
+            "it": "Ristorante giapponese moderno con menu interattivo, sistema di prenotazione tavoli e prenotazione del menu degustazione dello chef."
+        },
+        "plus": {
+            "en": "85% table occupancy on weekends, 200+ online reservations weekly",
+            "it": "Occupazione tavoli dell'85% nei weekend, oltre 200 prenotazioni online a settimana"
+        },
+        "logo": "images/sushi_master.png"
     },
     {
-        "title": "Pokémon World",
-        "url": "https://micheleargenti.github.io/wdd231/project/index.html",
-        "description": "Ho creato un hub dinamico per fan Pokémon, combinando database completo e funzioni social",
-        "plus": "",
-        "logo": "images/pokemon_world.webp"
+        "title": {
+            "en": "Sunset Rooftop Bar",
+            "it": "Bar Rooftop Sunset"
+        },
+        "url": "https://micheleargenti.github.io/sunset-rooftop",
+        "description": {
+            "en": "Trendy rooftop bar website with event space booking, cocktail menu with ingredients, and influencer collaboration portal.",
+            "it": "Sito web per trendy rooftop bar con prenotazione spazi eventi, menu cocktail con ingredienti e portale collaborazione influencer."
+        },
+        "plus": {
+            "en": "Booked 50+ private events in first year, 25K Instagram followers",
+            "it": "Oltre 50 eventi privati prenotati nel primo anno, 25K follower su Instagram"
+        },
+        "logo": "images/sunset_rooftop.png"
+    },
+    {
+        "title": {
+            "en": "The Burger Joint",
+            "it": "Il Burger Joint"
+        },
+        "url": "https://micheleargenti.github.io/burger-joint",
+        "description": {
+            "en": "Custom burger builder website with nutrition calculator, delivery integration, and customer review system.",
+            "it": "Sito web con builder di hamburger personalizzati, calcolatore nutrizionale, integrazione consegne e sistema di recensioni clienti."
+        },
+        "plus": {
+            "en": "150% growth in delivery orders, 4.8/5 average rating",
+            "it": "Crescita del 150% degli ordini a domicilio, valutazione media 4.8/5"
+        },
+        "logo": "images/burger_joint.png"
+    },
+    {
+        "title": {
+            "en": "Vino & Tapas Bar",
+            "it": "Bar Vino & Tapas"
+        },
+        "url": "https://micheleargenti.github.io/vino-tapas-bar",
+        "description": {
+            "en": "Elegant wine bar website with wine catalog, private event booking, and virtual wine tasting experiences.",
+            "it": "Sito web elegante per wine bar con catalogo vini, prenotazione eventi privati ed esperienze di degustazione virtuale."
+        },
+        "plus": {
+            "en": "300+ wine club members, 65% repeat customer rate",
+            "it": "Oltre 300 membri del wine club, tasso di clienti abituali del 65%"
+        },
+        "logo": "images/vino_tapas.png"
+    },
+    {
+        "title": {
+            "en": "Green Bowl",
+            "it": "Green Bowl"
+        },
+        "url": "https://micheleargenti.github.io/green-bowl",
+        "description": {
+            "en": "Healthy fast-casual restaurant with nutrition tracking, meal prep subscription, and catering order system.",
+            "it": "Ristorante fast-casual salutare con monitoraggio nutrizionale, abbonamento meal prep e sistema ordini catering."
+        },
+        "plus": {
+            "en": "200+ weekly meal prep subscribers, featured in 'Best Healthy Eats 2025'",
+            "it": "Oltre 200 abbonati meal prep a settimana, presente in 'Best Healthy Eats 2025'"
+        },
+        "logo": "images/green_bowl.png"
+    },
+    {
+        "title": {
+            "en": "Taco Fiesta",
+            "it": "Fiesta del Taco"
+        },
+        "url": "https://micheleargenti.github.io/taco-fiesta",
+        "description": {
+            "en": "Vibrant Mexican restaurant with online ordering, catering management, and birthday party booking system.",
+            "it": "Vivace ristorante messicano con ordini online, gestione catering e sistema prenotazione feste di compleanno."
+        },
+        "plus": {
+            "en": "180% revenue increase from online ordering, 95% customer satisfaction",
+            "it": "Aumento del 180% delle entrate dagli ordini online, soddisfazione clienti del 95%"
+        },
+        "logo": "images/taco_fiesta.png"
+    },
+    {
+        "title": {
+            "en": "The Roastery Café",
+            "it": "Caffè Roastery"
+        },
+        "url": "https://micheleargenti.github.io/roastery-cafe",
+        "description": {
+            "en": "Artisanal coffee shop website with online ordering, loyalty program integration, and event calendar for live music nights.",
+            "it": "Sito web per caffè artigianale con ordini online, integrazione programma fedeltà e calendario eventi per serate di musica dal vivo."
+        },
+        "plus": {
+            "en": "120% increase in online orders, 500+ loyalty members in first 3 months",
+            "it": "Aumento del 120% degli ordini online, oltre 500 membri fedeltà nei primi 3 mesi"
+        },
+        "logo": "images/roastery_cafe.png"
     }
 ]

@@ -1,253 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silvers Company | Professional Web Development</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <script src="script/index.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>SilversCompany | Web Agency</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome 6 (free icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js" defer></script>
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <div class="logo">
-                <img src="images/logo.png" alt="Silvers Company">
+
+    <div class="container">
+        <nav>
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="SilversCompany Logo" class="logo-img">
+                <div class="logo-text">
+                    Silvers<span class="company">Company</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <ul class="nav-links">
+                <li><a href="#home" data-en="Home" data-it="Home">Home</a></li>
+                <li><a href="#work" data-en="Work" data-it="Lavori">Work</a></li>
+                <li><a href="#services" data-en="Services" data-it="Servizi">Services</a></li>
+                <li><a href="#about" data-en="About" data-it="Chi Siamo">About</a></li>
+                <li><a href="#contact" data-en="Contact" data-it="Contatti">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="lang-switcher" id="langSwitcher">
+                    <i class="fas fa-globe"></i>
+                    <span id="currentLang">ENG</span>
+                </button>
+                <a href="#contact" class="btn-primary desktop-cta" data-en="Let's talk" data-it="Parliamo">Let's
+                    talk</a>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <nav>
-                <button class="mobile-menu-btn">☰</button>
-                <ul id="nav-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#benefits">Benefits</a></li>
-                    <li><a href="#contact" class="btn">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        </nav>
+    </div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <h1>Creiamo Esperienze Digitali Che Generano Risultati</h1>
-            <p>Silvers Company è una delle principali aziende di sviluppo web, specializzata nella creazione di siti web accattivanti e reattivi che aiutano le aziende a crescere online.</p>
-            <a href="#projects" class="btn">Guarda i nostri Lavori</a>
-            <a href="#contact" class="btn btn-accent">Iniziamo</a>
-        </div>
-    </section>
+    <!-- Mobile Menu -->
+    <ul class="mobile-menu" id="mobileMenu">
+        <li><a href="#home" data-en="Home" data-it="Home">Home</a></li>
+        <li><a href="#work" data-en="Work" data-it="Lavori">Work</a></li>
+        <li><a href="#services" data-en="Services" data-it="Servizi">Services</a></li>
+        <li><a href="#about" data-en="About" data-it="Chi Siamo">About</a></li>
+        <li><a href="#contact" data-en="Contact" data-it="Contatti">Contact</a></li>
+        <li><a href="#contact" class="mobile-cta" data-en="Let's talk" data-it="Parliamo">Let's talk</a></li>
+    </ul>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Silvers Company</h2>
-                    <p>Fondata nel 2025, Silvers Company è all'avanguardia nello sviluppo web, aiutando aziende di ogni dimensione a stabilire una presenza online efficace. Il nostro team di sviluppatori, designer e strateghi digitali esperti lavora insieme per creare siti web che non solo siano belli da vedere, ma che offrano anche prestazioni eccezionali.</p>
-                    <p>Crediamo in un approccio collaborativo, lavorando a stretto contatto con i nostri clienti per comprendere le loro esigenze specifiche e fornire soluzioni che superino le aspettative.</p>
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero-content">
+                        <div class="hero-badge" data-en="✨ Web agency since 2025" data-it="✨ Agenzia web dal 2025">✨ Web
+                            agency
+                            since 2025</div>
+                        <h1>We build <span>digital products</span> that people love</h1>
+                        <p data-en="Strategy, design, and engineering — we help brands grow with modern websites and applications."
+                            data-it="Strategia, design e sviluppo — aiutiamo i brand a crescere con siti web e applicazioni moderne.">
+                            Strategy, design, and engineering — we help brands grow with modern websites and
+                            applications.</p>
+                        <div class="hero-buttons">
+                            <a href="#work" class="btn-primary" data-en="See our work →"
+                                data-it="Vedi i nostri lavori →">See our work
+                                →</a>
+                            <a href="#contact" class="btn-outline" data-en="Get in touch" data-it="Contattaci">Get in
+                                touch</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <i class="fas fa-code"></i> <i class="fas fa-mobile-alt"></i> <i class="fas fa-rocket"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title" data-en="What we do" data-it="Cosa facciamo">What we do</h2>
+                <p class="section-sub" data-en="We craft high-performance websites tailored to your business goals."
+                    data-it="Realizziamo siti web ad alte prestazioni su misura per i tuoi obiettivi aziendali.">We
+                    craft
+                    high-performance websites tailored to your business goals.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-globe"></i></div>
+                        <h3 data-en="Web Development" data-it="Sviluppo Web">Web Development</h3>
+                        <p data-en="Custom websites, e-commerce, and web apps with modern tech stacks."
+                            data-it="Siti web personalizzati, e-commerce e applicazioni web con stack tecnologici moderni.">
+                            Custom
+                            websites, e-commerce, and web apps with modern tech stacks.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h3 data-en="UI/UX Design" data-it="Design UI/UX">UI/UX Design</h3>
+                        <p data-en="Beautiful, user-friendly interfaces that convert visitors into customers."
+                            data-it="Interfacce belle e user-friendly che convertono i visitatori in clienti.">
+                            Beautiful,
+                            user-friendly interfaces that convert visitors into customers.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3 data-en="SEO & Performance" data-it="SEO & Performance">SEO & Performance</h3>
+                        <p data-en="Speed optimization and search engine visibility that drives traffic."
+                            data-it="Ottimizzazione della velocità e visibilità sui motori di ricerca che genera traffico.">
+                            Speed
+                            optimization and search engine visibility that drives traffic.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio/Work Section -->
+        <section id="work" class="section" style="background-color: #fafcff;">
+            <div class="container">
+                <h2 class="section-title" data-en="Recent work" data-it="Lavori recenti">Recent work</h2>
+                <p class="section-sub" data-en="Real results for real businesses"
+                    data-it="Risultati reali per aziende reali">
+                    Real results for real businesses</p>
+                <div id="portfolio-container" class="portfolio-grid">
+                    <div class="loading">Loading projects...</div>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <button id="viewAllBtn" class="btn-outline" data-en="View all projects →"
+                        data-it="Vedi tutti i progetti →">View all projects →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title" data-en="About SilversCompany" data-it="Chi è SilversCompany">About
+                    SilversCompany
+                </h2>
+                <p class="section-sub"
+                    data-en="We're a team of passionate creators dedicated to bringing your digital vision to life"
+                    data-it="Siamo un team di creativi appassionati dedicati a dare vita alla tua visione digitale">
+                    We're a team
+                    of passionate creators dedicated to bringing your digital vision to life</p>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3 data-en="We turn ideas into reality" data-it="Trasformiamo le idee in realtà">We turn ideas
+                            into reality
+                        </h3>
+                        <p data-en="Founded in 2025, SilversCompany has quickly become a trusted partner for businesses looking to establish a powerful online presence. Our approach combines creative design with technical excellence, ensuring every project not only looks beautiful but performs exceptionally."
+                            data-it="Fondata nel 2025, SilversCompany è diventata rapidamente un partner affidabile per le aziende che cercano di stabilire una presenza online potente. Il nostro approccio combina design creativo ed eccellenza tecnica, garantendo che ogni progetto non solo sia bello da vedere ma funzioni eccezionalmente bene.">
+                            Founded in 2025, SilversCompany has quickly become a trusted partner for businesses looking
+                            to establish a
+                            powerful online presence. Our approach combines creative design with technical excellence,
+                            ensuring every
+                            project not only looks beautiful but performs exceptionally.</p>
+                        <br>
+                        <p data-en="We believe in building long-term relationships with our clients, understanding their unique challenges, and delivering solutions that drive real business growth."
+                            data-it="Crediamo nella costruzione di relazioni a lungo termine con i nostri clienti, comprendendo le loro sfide uniche e fornendo soluzioni che guidano una reale crescita aziendale.">
+                            We believe in building long-term relationships with our clients, understanding their unique
+                            challenges,
+                            and delivering solutions that drive real business growth.</p>
+                    </div>
                     <div class="about-stats">
-                        <div class="stat">
-                            <h3>10+</h3>
-                            <p>Progetti Completati</p>
+                        <div class="stat-card">
+                            <div class="stat-number">50+</div>
+                            <div data-en="Projects Completed" data-it="Progetti Completati">Projects Completed</div>
                         </div>
-                        <div class="stat">
-                            <h3>5+</h3>
-                            <p>Anni di esperienza</p>
+                        <div class="stat-card">
+                            <div class="stat-number">30+</div>
+                            <div data-en="Happy Clients" data-it="Clienti Soddisfatti">Happy Clients</div>
                         </div>
-                        <div class="stat">
-                            <h3>9+</h3>
-                            <p>Clienti soddisfatti</p>
+                        <div class="stat-card">
+                            <div class="stat-number">4.9</div>
+                            <div data-en="Client Rating" data-it="Valutazione Clienti">Client Rating</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">24/7</div>
+                            <div data-en="Support" data-it="Supporto">Support</div>
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
-                    <img src="images/logo.png" alt="Silvers Company">
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <div class="section" style="background-color: #fafcff;">
+            <div class="container">
+                <h2 class="section-title" data-en="Loved by clients" data-it="Amato dai clienti">Loved by clients</h2>
+                <p class="section-sub" data-en="Don't just take our word for it"
+                    data-it="Non crederci solo sulla parola">Don't
+                    just take our word for it</p>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p data-en="They delivered our company website in half the expected time. The team is incredibly professional."
+                            data-it="Hanno consegnato il sito web della nostra azienda nella metà del tempo previsto. Il team è incredibilmente professionale.">
+                            They delivered our company website in half the expected time. The team is incredibly
+                            professional.</p>
+                        <p style="margin-top: 1rem; font-weight: 600;">— Sarah Chen, CMO</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p data-en="Best development partner we've worked with. Clean code, fast communication, and great design sense."
+                            data-it="Il miglior partner di sviluppo con cui abbiamo lavorato. Codice pulito, comunicazione veloce e grande senso del design.">
+                            Best development partner we've worked with. Clean code, fast communication, and great design
+                            sense.</p>
+                        <p style="margin-top: 1rem; font-weight: 600;">— Marcus Lee, Founder</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p data-en="Our conversions increased by 35% after the redesign. Highly recommend their expertise."
+                            data-it="Le nostre conversioni sono aumentate del 35% dopo il redesign. Raccomando vivamente la loro esperienza.">
+                            Our conversions increased by 35% after the redesign. Highly recommend their expertise.</p>
+                        <p style="margin-top: 1rem; font-weight: 600;">— Elena Rossi, Director</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2>I nostri progetti recenti</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <a href="https://micheleargenti.github.io/restaurant-sample/" target="_blank">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="images/tony_pizzeria.png" alt="Tony's Pizzeria">
-                        </div>
-                        <div class="project-info">
-                            <h3>Tony's Pizzeria</h3>
-                            <p>Pizzeria artigianale che unisce la tradizione della cucina italiana alla qualità degli ingredienti selezionati, per offrire un'esperienza autentica da gustare in ogni boccone.</p>
-                            <!--
-                            <div class="project-tags">
-                                <span class="tag">E-commerce</span>
-                                <span class="tag">React</span>
-                                <span class="tag">Node.js</span>
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title" data-en="Get in touch" data-it="Contattaci">Get in touch</h2>
+                <p class="section-sub" data-en="Ready to start your next project? Let's talk!"
+                    data-it="Pronto per iniziare il tuo prossimo progetto? Parliamone!">Ready to start your next
+                    project? Let's
+                    talk!</p>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3 data-en="Contact Information" data-it="Informazioni di contatto">Contact Information</h3>
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong data-en="Email" data-it="Email">Email</strong><br>
+                                <a href="mailto:michele.argenti000@gmail.com"
+                                    style="color: #4f46e5; text-decoration: none; word-break: break-all;">michele.argenti000@gmail.com</a>
                             </div>
-                            -->
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong data-en="Phone" data-it="Telefono">Phone</strong><br>
+                                <a href="tel:+393921354583" style="color: #4f46e5; text-decoration: none;">+39 392 135
+                                    4583</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong data-en="Location" data-it="Posizione">Location</strong><br>
+                                <span data-en="Terni, Italy" data-it="Terni, Italy">Terni, Italy</span>
+                            </div>
                         </div>
                     </div>
-                </a>
+                    <div class="contact-form">
+                        <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                            <input type="hidden" name="_subject" value="New message from SilversCompany">
+                            <input type="hidden" name="_captcha" value="true">
 
-                <!-- Project 2 -->
-                 <a href="https://micheleargenti.github.io/wdd130/wwr/index.html" target="_blank">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="images/rafting_website.jpg" alt="Rafting">
-                        </div>
-                        <div class="project-info">
-                            <h3>Rafting Website</h3>
-                            <p>Un sito web dinamico e coinvolgente per un'azienda specializzata in rafting, pensato per trasmettere l'emozione dell'avventura e convertire i visitatori in clienti.</p>
-                            <!--
-                            <div class="project-tags">
-                                <span class="tag">Corporate</span>
-                                <span class="tag">WordPress</span>
-                                <span class="tag">PHP</span>
+                            <div class="form-group">
+                                <input type="text" id="nameInput" name="name" placeholder="Your Name" required>
                             </div>
-                            -->
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Project 3 -->
-                <a href="https://micheleargenti.github.io/wdd131/project/index.html" target="_blank">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="images/reef_paradise.webp" alt="Reef Paradise">
-                        </div>
-                        <div class="project-info">
-                            <h3>Reef Paradise</h3>
-                            <p>Un e-commerce su misura per un rivenditore specializzato in acquari completi, accessori e servizi di manutenzione.</p>
-                            <!--
-                            <div class="project-tags">
-                                <span class="tag">Booking</span>
-                                <span class="tag">Vue.js</span>
-                                <span class="tag">MongoDB</span>
+                            <div class="form-group">
+                                <input type="email" id="emailInput" name="_replyto" placeholder="Your Email" required>
                             </div>
-                            -->
-                        </div>
-                    </div>
-                </a>
-                
-                <!-- Project 4 -->
-                <a href="https://micheleargenti.github.io/wdd231/project/index.html" target="_blank">
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="images/pokemon_world.webp" alt="Pokémon World">
-                        </div>
-                        <div class="project-info">
-                            <h3>Pokémon World</h3>
-                            <p>Un hub dinamico per fan Pokémon, combinando database completo e funzioni social.</p>
-                            <!--
-                            <div class="project-tags">
-                                <span class="tag">Education</span>
-                                <span class="tag">Laravel</span>
-                                <span class="tag">MySQL</span>
+                            <div class="form-group">
+                                <textarea id="messageInput" name="message" placeholder="Tell us about your project"
+                                    rows="5"></textarea>
                             </div>
-                            -->
-                        </div>
+                            <button type="submit" class="btn-primary" style="width: 100%;" data-en="Send Message →"
+                                data-it="Invia messaggio →">Send Message →</button>
+                        </form>
                     </div>
-                </a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Benefits Section -->
-    <section class="benefits" id="benefits">
-        <div class="container">
-            <h2>Perché scegliere Silvers Company?</h2>
-            <div class="benefits-grid">
-                <!-- Benefit 1 -->
-                <div class="benefit-card">
-                    <div class="benefit-icon">🚀</div>
-                    <h3>Consegna veloce</h3>
-                    <p>Sappiamo che il tempo è denaro. I nostri processi efficienti garantiscono la consegna puntuale del tuo progetto, ogni volta.</p>
-                </div>
-                
-                <!-- Benefit 2 -->
-                <div class="benefit-card">
-                    <div class="benefit-icon">💡</div>
-                    <h3>Soluzioni innovative</h3>
-                    <p>Anticipiamo le tendenze del settore per fornire soluzioni all'avanguardia che ti garantiscano un vantaggio competitivo.</p>
-                </div>
-                
-                <!-- Benefit 3 -->
-                <div class="benefit-card">
-                    <div class="benefit-icon">📱</div>
-                    <h3>Progettazione mobile-first</h3>
-                    <p>Tutti i nostri siti web sono progettati pensando agli utenti mobili, garantendo un'esperienza fluida su tutti i dispositivi.</p>
-                </div>
-                
-                <!-- Benefit 4 -->
-                <div class="benefit-card">
-                    <div class="benefit-icon">🛡️</div>
-                    <h3>Sicuri e affidabili</h3>
-                    <p>Implementiamo solide misure di sicurezza per proteggere il tuo sito web e i tuoi dati da potenziali minacce.</p>
-                </div>
-                
-                <!-- Benefit 5 -->
-                <div class="benefit-card">
-                    <div class="benefit-icon">🔍</div>
-                    <h3>SEO ottimizzato</h3>
-                    <p>I nostri siti web sono realizzati con le migliori pratiche SEO per aiutarti a ottenere un posizionamento più alto nei risultati dei motori di ricerca.</p>
-                </div>
-                
-                <!-- Benefit 6 -->
-                <div class="benefit-card">
-                    <div class="benefit-icon">📞</div>
-                    <h3>Supporto continuo</h3>
-                    <p>Forniamo supporto e manutenzione continui per garantire che il tuo sito web rimanga aggiornato e funzionale.</p>
+    <!-- Modal for all projects -->
+    <div id="projectsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle" data-en="All Projects" data-it="Tutti i progetti">
+                    <i class="fas fa-folder-open"></i> All Projects
+                </h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div id="allProjectsContainer" class="all-projects-grid">
+                <div class="loading">
+                    <i class="fas fa-spinner fa-pulse"></i> Loading projects...
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- CTA Section -->
-    <section class="cta" id="contact">
-        <div class="container">
-            <h2>Pronto a Trasformare la Tua Presenza Online?</h2>
-            <p>Contattaci oggi per una consulenza gratuita e discutiamo di come possiamo aiutare la tua attività ad avere successo online.</p>
-            <a href="mailto:michele.argenti000@gmail.com" class="btn btn-accent">Ottieni il tuo preventivo gratuito</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Silvers Company</h3>
-                    <p>Creiamo esperienze digitali eccezionali dal 2025. Siamo specializzati nello sviluppo web personalizzato che stimola la crescita aziendale.</p>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>SilversCompany</h4>
+                    <p data-en="Creating digital excellence" data-it="Creando eccellenza digitale">Creating digital
+                        excellence<br>since 2025</p>
                 </div>
-                
-                <div class="footer-column">
-                    <h3>Collegamenti rapidi</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#projects">Our Work</a></li>
-                        <li><a href="#benefits">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                <div class="footer-col">
+                    <h4 data-en="Quick Links" data-it="Link rapidi">Quick Links</h4>
+                    <a href="#home" data-en="Home" data-it="Home">Home</a>
+                    <a href="#work" data-en="Work" data-it="Lavori">Work</a>
+                    <a href="#services" data-en="Services" data-it="Servizi">Services</a>
+                    <a href="#about" data-en="About" data-it="Chi Siamo">About</a>
+                    <a href="#contact" data-en="Contact" data-it="Contatti">Contact</a>
                 </div>
-                
-                <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li>Email: michele.argenti000@gmail.com</li>
-                        <li>Telefono: +39 392 135 4583</li>
-                    </ul>
+                <div class="footer-col">
+                    <h4 data-en="Services" data-it="Servizi">Services</h4>
+                    <a href="#services" data-en="Web Development" data-it="Sviluppo Web">Web Development</a>
+                    <a href="#services" data-en="UI/UX Design" data-it="Design UI/UX">UI/UX Design</a>
+                    <a href="#services" data-en="SEO & Performance" data-it="SEO & Performance">SEO & Performance</a>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Follow Us" data-it="Seguici">Follow Us</h4>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.linkedin.com/in/michele-argenti/"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/MicheleArgenti"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
             </div>
-            
             <div class="copyright">
-                <p>&copy; 2025 Silvers Company. All rights reserved.</p>
+                © 2025 SilversCompany — <span data-en="All rights reserved" data-it="Tutti i diritti riservati">All
+                    rights
+                    reserved</span>
             </div>
         </div>
     </footer>
 
 </body>
+
 </html>
