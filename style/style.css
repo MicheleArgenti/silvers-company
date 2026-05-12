@@ -727,7 +727,79 @@ nav {
     font-size: 0.85rem;
 }
 
-/* About Section */
+/* About Section Enhancements */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.benefit-list {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #1e1e2a;
+}
+
+.benefit-item i {
+    color: #10b981;
+    /* Success Green */
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.stat-card {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    border-color: #4f46e5;
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.1);
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #4f46e5;
+    margin-bottom: 0.25rem;
+}
+
+.stat-card div:last-child {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* About Section 
 .about-content {
     display: flex;
     flex-direction: column;
@@ -766,6 +838,7 @@ nav {
 .stat-card div:last-child {
     font-size: 0.75rem;
 }
+*/
 
 /* Footer */
 footer {
